@@ -1,12 +1,12 @@
 def call() {
     // Clone the repository
-    git branch: 'main', url: 'https://github.com/bhanu-dabas/bhanusingh.git'
+    git branch: 'main', url: 'https://github.com/bhanu-dabas/my-tool.git'
     // User Approval
     input message: 'Approve the deployment?', submitter: 'admin,bhanu-dabas'
     // Playbook Execution
     ansiblePlaybook(
-        inventory: 'hosts',
-        playbook: 'mongodb_install.yml'
+        inventory: 'dynamic_inventory_script.py',
+        playbook: 'pb.yml'
     )
     // Notification
     emailext(
