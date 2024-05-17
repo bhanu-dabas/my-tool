@@ -1,5 +1,7 @@
 - name: Install MongoDB
   hosts: all
   become: yes
+  vars:
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
   roles:
     - ansible-role-mongodb
