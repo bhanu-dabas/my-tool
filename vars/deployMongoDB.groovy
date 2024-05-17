@@ -5,8 +5,8 @@ def call() {
     input message: 'Approve the deployment?', submitter: 'admin,bhanu-dabas'
     // Playbook Execution
     ansiblePlaybook(
-        inventory: 'hosts',
-        playbook: 'mongodb_install.yml'
+        inventory: 'dynamic_inventory_script.py',
+        playbook: 'pb.yml'
     )
     // Notification
     emailext(
