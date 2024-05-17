@@ -1,0 +1,19 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Ola Ogunsegha
+  role_name: mongodb
+  namespace: olasegha
+  company: Self-employed
+  description: Manage MongoDB with authentication
+  min_ansible_version: 2.8
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+        - xenial
+  galaxy_tags:
+    - database
+    - nosql
+    - mongodb
