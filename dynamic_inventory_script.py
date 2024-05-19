@@ -11,7 +11,7 @@ def get_aws_inventory():
         '_meta': {'hostvars': {}}
     }
 
-    private_key_path = '/home/dabas/bhanu.pem'  # Specify the path to your PEM file here
+    private_key_path = '/var/lib/jenkins/keys/bhanu.pem'  # Specify the path to your PEM file here
 
     for reservation in response['Reservations']:
         for instance in reservation['Instances']:
