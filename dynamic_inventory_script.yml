@@ -22,7 +22,7 @@ def get_aws_inventory():
                     inventory['all']['hosts'].append(public_ip)
                     inventory['_meta']['hostvars'][public_ip] = {
                         'ansible_host': public_ip,
-                        'ansible_ssh_private_key_file': private_key_path,  # Specify the private key path
+                        'ansible_ssh_private_key_file': /var/lib/jenkins/keys/bhanu.pem,  # Specify the private key path
                         'ansible_user': 'ubuntu'  # Adjust the user name as needed
                     }
                 for tag in instance['Tags']:
