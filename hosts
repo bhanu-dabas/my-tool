@@ -1,0 +1,1 @@
+ubuntu ansible_host=35.154.95.147 ansible_ssh_user=ubuntu ansible_private_key_file=/var/lib/jenkins/keys/bhanu.pem
