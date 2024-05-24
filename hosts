@@ -1,1 +1,1 @@
-ubuntu ansible_host=13.201.26.130 ansible_ssh_user=ubuntu ansible_private_key_file=/var/lib/jenkins/mykey.pem
+ubuntu ansible_host=65.0.4.29 ansible_ssh_user=ubuntu ansible_private_key_file=/var/lib/jenkins/mykey.pem
